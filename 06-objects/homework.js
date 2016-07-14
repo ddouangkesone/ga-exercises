@@ -16,7 +16,7 @@ called `flickerObj`
 
 
 for (var i = 0; i <= flickerObjLen - 1; i++) {
-// var shitBrianWants = (flickerObj.items[i].title);
+// var brianWants = (flickerObj.items[i].title);
     links.push(flickerObj.items[i].title + " " + flickerObj.items[i].date_taken);
 };
 
