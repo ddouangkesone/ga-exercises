@@ -8,7 +8,7 @@ var jsonString = '{ "title": "Uploads from everyone", "link": "https://www.flick
 var flickerObj = JSON.parse(jsonString);
 var flickerObjLen = flickerObj.items.length;
 var links = [];
-var linksJSON = JSON.stringify(links);
+
 /*
 1. Convert the string `jsonString` to a Javascript Object and store it in a variable
 called `flickerObj`
@@ -19,7 +19,8 @@ for (var i = 0; i <= flickerObjLen - 1; i++) {
 // var brianWants = (flickerObj.items[i].title);
     links.push(flickerObj.items[i].title + " " + flickerObj.items[i].date_taken);
 };
-
+var linksJSON = JSON.stringify(links);
+// console.log(linksJSON);
 console.log(linksJSON);
 
 /*
